@@ -1,7 +1,7 @@
 package biblioteka;
 //Javni komentar
 public class Autor {
-	//privatni komentar
+	
 	private String ime;
 	private String prezime;
 	
