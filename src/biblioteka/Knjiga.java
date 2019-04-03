@@ -15,6 +15,9 @@ public class Knjiga {
 	}
 	
 	public void setNaslov(String naslov) {
+		if (naslov == null || naslov.isEmpty())
+			throw new RuntimeException("Naslov knjige ne sme biti null niti prazan String");
+		
 		this.naslov = naslov;
 	}
 	
@@ -23,6 +26,9 @@ public class Knjiga {
 	}
 	
 	public void setIsbn(String isbn) {
+		if (isbn == null || isbn.isEmpty() || (isbn.length() != 13 && isbn.length()!=9))
+			throw new RuntimeException("ISBN ne sme biti null i mora biti duzine 9 ili 13");
+		
 		this.isbn = isbn;
 	}
 	
@@ -31,6 +37,9 @@ public class Knjiga {
 	}
 	
 	public void setAutori(Autor[] autori) {
+		if (autori == null)
+			throw new RuntimeException("Autori ne smeju biti null");
+		
 		this.autori = autori;
 	}
 	
@@ -39,6 +48,9 @@ public class Knjiga {
 	}
 	
 	public void setIzdavac(String izdavac) {
+		if (izdavac == null || izdavac.isEmpty())
+			throw new RuntimeException("Izdavac ne sme biti null niti prazan String");
+
 		this.izdavac = izdavac;
 	}
 	
@@ -47,6 +59,9 @@ public class Knjiga {
 	}
 	
 	public void setIzdanje(int izdanje) {
+		if (izdanje < 1)
+			throw new RuntimeException("Izdanje mora biti 1 ili vece");
+
 		this.izdanje = izdanje;
 	}
 
