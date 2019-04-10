@@ -1,14 +1,40 @@
 package biblioteka;
-//Javni komentar
+
+/**
+ * Klasa koja predstavlja autora knjige.
+ * 
+ * @author Bojan Tomic
+ * @version 1.0
+ *
+ */
 public class Autor {
 	
+	/**
+	 * Ime autora kao String.
+	 */
 	private String ime;
+	
+	
+	/**
+	 * Prezime autora kao String.
+	 */
 	private String prezime;
 	
+	/**
+	 * Metoda koja vraca ime autora.
+	 * @return ime kao String
+	 */
 	public String getIme() {
 		return ime;
 	}
 	
+	/**
+	 * Metoda postavlja novo ime autora.
+	 * 
+	 * @param ime nova vrednost za ime
+	 * @throws java.lang.RuntimeException ako je uneto ime null ili
+	 * prazan String
+	 */
 	public void setIme(String ime) {
 		if (ime == null || ime.isEmpty())
 			throw new RuntimeException("Ime ne sme biti null niti prazan String");
@@ -16,10 +42,21 @@ public class Autor {
 		this.ime = ime;
 	}
 	
+	/**
+	 * Metoda koja vraca prezime autora.
+	 * @return prezime kao String
+	 */
 	public String getPrezime() {
 		return prezime;
 	}
 	
+	/**
+	 * Metoda postavlja novo prezime autora.
+	 * 
+	 * @param prezime nova vrednost za prezime
+	 * @throws java.lang.RuntimeException ako je uneto prezime null ili
+	 * prazan String
+	 */
 	public void setPrezime(String prezime) {
 		if (prezime == null || prezime.isEmpty())
 			throw new RuntimeException("Prezime ne sme biti null niti prazan String");
@@ -41,6 +78,12 @@ public class Autor {
 		return result;
 	}
 
+	/**
+	 * Poredi dva autora po imenu i prezimenu.
+	 * 
+	 * @return true ako su i ime i prezime oba autora isti, false ako
+	 * to nije slucaj.
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
