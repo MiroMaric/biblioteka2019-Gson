@@ -21,6 +21,24 @@ public class Autor {
 	private String prezime;
 	
 	/**
+	 * Inicijalizuje autora.
+	 * 
+	 */
+	public Autor() {
+	}
+	
+	/**
+	 * Inicijalizuje autora i postavlja ime i prezime na unete vrednosti pozivanjem set metoda.
+	 * 
+	 * @param ime ime autora
+	 * @param prezime prezime autora
+	 */
+	public Autor(String ime, String prezime) {
+		this.setIme(ime);
+		this.setPrezime(prezime);
+	}
+
+	/**
 	 * Metoda koja vraca ime autora.
 	 * @return ime kao String
 	 */

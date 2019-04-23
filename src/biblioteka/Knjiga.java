@@ -10,6 +10,18 @@ public class Knjiga {
 	private String izdavac;
 	private int izdanje;
 	
+	public Knjiga() {
+		
+	}
+	
+	public Knjiga(String naslov, String isbn, Autor[] autori, String izdavac, int izdanje) {
+		this.setNaslov(naslov);
+		this.setIsbn(isbn);
+		this.setAutori(autori);
+		this.setIzdavac(izdavac);
+		this.setIzdanje(izdanje);
+	}
+
 	public String getNaslov() {
 		return naslov;
 	}
