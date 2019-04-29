@@ -47,4 +47,16 @@ public class Biblioteka implements BibliotekaInterface {
 		return rezultati;
 	}
 
+	@Override
+	public void savuvajSveKnjige(String putanja) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Knjiga> ucitajSveKnjige(String putanja) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
