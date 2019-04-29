@@ -18,6 +18,6 @@ public interface BibliotekaInterface {
 	
 	public void savuvajSveKnjige(String putanja);
 	
-	public List<Knjiga> ucitajSveKnjige(String putanja);
+	public void ucitajSveKnjige(String putanja);
 	
 }
