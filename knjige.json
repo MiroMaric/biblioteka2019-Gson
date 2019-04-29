@@ -1,0 +1,30 @@
+[
+  {
+    "naslov": "Naslov1",
+    "isbn": "123456789",
+    "autori": [
+      {
+        "ime": "Pera",
+        "prezime": "Peric"
+      },
+      {
+        "ime": "Mika",
+        "prezime": "Mikic"
+      }
+    ],
+    "izdavac": "Izdavac1",
+    "izdanje": 1
+  },
+  {
+    "naslov": "Naslov2",
+    "isbn": "987654321",
+    "autori": [
+      {
+        "ime": "Zika",
+        "prezime": "Zikic"
+      }
+    ],
+    "izdavac": "Izdavac2",
+    "izdanje": 1
+  }
+]
